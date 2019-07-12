@@ -1,0 +1,70 @@
+@import 'variables';
+@import 'functions';
+@import 'mixins';
+
+body {
+  font-family: $main-font;
+  background-color: $body-bg;
+}
+
+header#main-header {
+  background-color: $success-color;
+  color: set-text-color($primary-color);
+  // Nesting
+  h1 {
+    text-align: center;
+  }
+}
+
+nav#main-nav {
+  // Nesting
+  ul {
+    padding-top: 1rem;
+    list-style: none;
+  }
+  li {
+    display: inline;
+  }
+  a {
+    color: $dark-color;
+    padding-right: 0.5rem;
+    &:hover {
+      color: $primary-color;
+    }
+  }
+}
+
+// Extend
+.section {
+  padding: 0.5rem;
+  h1 {
+    margin-bottom: 1rem;
+  }
+}
+
+#section-a {
+  @extend .section;
+}
+
+#section-b {
+  @extend .section;
+}
+
+.button {
+  @include my-mixin();
+  padding: 0.5rem;
+  border: solid 1px $success-color;
+  border-radius: 0.5rem;
+}
+
+.button-a {
+  @extend .button;
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.button-b {
+  @extend .button;
+  color: $dark-color;
+}

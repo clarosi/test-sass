@@ -1,0 +1,39 @@
+body {
+  font-family: "Josefin Sans", sans-serif;
+  background-color: #b0d9f1; }
+
+header#main-header {
+  background-color: #28a745;
+  color: #fff; }
+  header#main-header h1 {
+    text-align: center; }
+
+nav#main-nav ul {
+  padding-top: 1rem;
+  list-style: none; }
+
+nav#main-nav li {
+  display: inline; }
+
+nav#main-nav a {
+  color: #333;
+  padding-right: 0.5rem; }
+  nav#main-nav a:hover {
+    color: #007bff; }
+
+.section, #section-a, #section-b {
+  padding: 0.5rem; }
+  .section h1, #section-a h1, #section-b h1 {
+    margin-bottom: 1rem; }
+
+.button, .button-a, .button-b {
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  border: solid 1px #28a745;
+  border-radius: 0.5rem; }
+
+.button-a:hover {
+  text-decoration: none; }
+
+.button-b {
+  color: #333; }

@@ -1,0 +1,16 @@
+{
+  "name": "test-sass",
+  "version": "1.0.0",
+  "description": "Boiler plate for sass projects",
+  "main": "index.js",
+  "scripts": {
+    "start": "gulp"
+  },
+  "author": "Ian R. Claros",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.26.7",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^4.0.2"
+  }
+}
